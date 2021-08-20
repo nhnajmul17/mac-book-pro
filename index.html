@@ -29,9 +29,11 @@
                 <section class="mb-5">
                     <h5 class="fw-bold">Memory</h5>
                     <div class="grid row">
-                        <button type="button" class="btn btn-light col-lg-4 border border-dark m-1 ">8GB unified
+                        <button type="button" id="memory-8gb" class="btn btn-light col-lg-4 border border-dark m-1 ">8GB
+                            unified
                             Memory</button>
-                        <button type="button" class="btn btn-light col-lg-4 border border-dark m-1">16GB unified
+                        <button type="button" id="memory-16gb"
+                            class="btn btn-light col-lg-4 border border-dark m-1">16GB unified
                             Memory</button>
                     </div>
                 </section>
@@ -40,11 +42,14 @@
                 <section class="mb-5">
                     <h5 class="fw-bold">Storage</h5>
                     <div class="grid row">
-                        <button type="button" class="btn btn-light col-lg-4  border border-dark m-1 ">256GB SSD
+                        <button type="button" id="storage-256gb"
+                            class=" btn btn-light col-lg-4 border border-dark m-1 ">256GB SSD
                             Storage</button>
-                        <button type="button" class="btn btn-light col-lg-4 border border-dark m-1">512GB SSD
+                        <button type=" button" id="storage-512gb"
+                            class="btn btn-light col-lg-4 border border-dark m-1">512GB SSD
                             Storage</button>
-                        <button type="button" class="btn btn-light col-lg-4  border border-dark m-1">1TB SSD
+                        <button type="button" id="storage-1tb"
+                            class="btn btn-light col-lg-4  border border-dark m-1">1TB SSD
                             Storage</button>
                     </div>
                 </section>
@@ -53,9 +58,11 @@
                 <section class="mb-5">
                     <h5 class="fw-bold">Choose Your Delivery Option</h5>
                     <div class="grid row">
-                        <button type="button" class="btn btn-light col-lg-5 border border-dark m-1 ">Friday,Aug 25 Free
+                        <button type="button" id="free-delivery"
+                            class="btn btn-light col-lg-5 border border-dark m-1 ">Friday,Aug 25 Free
                             Prime Delivery</button>
-                        <button type="button" class="btn btn-light col-lg-5 border border-dark m-1">Friday,Aug 21
+                        <button type="button" id="paid-delivery"
+                            class="btn btn-light col-lg-5 border border-dark m-1">Friday,Aug 21
                             Delivery
                             Charge $20</button>
                     </div>
@@ -72,15 +79,15 @@
                             </tr>
                             <tr>
                                 <th scope="row">Extra memory Cost</th>
-                                <td>$0</td>
+                                <td>$<span id="memory-cost">0</span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Extra Storage Cost</th>
-                                <td>$0</td>
+                                <td>$<span id="storage-cost">0</span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Delivery Charge</th>
-                                <td>$0</td>
+                                <td>$<span id="delivery-cost">0</span></td>
                             </tr>
                         </tbody>
                         <tfoot>
