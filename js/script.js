@@ -80,6 +80,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     if (promoField == 'stevekaku') {
         document.getElementById('total').innerText = parseInt(totalPrice) - (parseInt(totalPrice) * 0.2);
         document.getElementById('promo').value = '';
+        document.getElementById("apply-btn").disabled = true;
     }
 
 
