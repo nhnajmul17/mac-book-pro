@@ -11,7 +11,6 @@ function extraMemory(cost) {
 function extraStorage(cost) {
     const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = cost;
-
     getTotal()
 }
 
@@ -73,4 +72,16 @@ document.getElementById('paid-delivery').addEventListener('click', function () {
     deliveryFee(20);
 })
 
+
+//promo section
+document.getElementById('apply-btn').addEventListener('click', function () {
+    const promoField = document.getElementById('promo').value;
+    const totalPrice = document.getElementById('total').innerText;
+    if (promoField == 'stevekaku') {
+        document.getElementById('total').innerText = parseInt(totalPrice) - (parseInt(totalPrice) * 0.2);
+        document.getElementById('promo').value = '';
+    }
+
+
+})
 
